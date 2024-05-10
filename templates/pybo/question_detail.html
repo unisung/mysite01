@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-{% load static %}
-<link rel="stylesheet"
-      type="text/css"
-      href="{% static 'bootstrap.min.css' %}">
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
 <div class="container my-3">
     <!--질문-->
     <h2 class="border-bottom py-2">{{question.subject}}</h2>
@@ -53,5 +44,7 @@
     <input type="submit" value="답변등록" class="btn btn-primary">
 </form>
 </div>
+    {% endblock %}
+<!--
 </body>
-</html>
+</html>-->
